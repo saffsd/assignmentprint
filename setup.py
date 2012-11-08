@@ -1,8 +1,8 @@
-from distutils.core import setup
+from setuptools import setup
 import sys, os
 
 here = os.path.abspath(os.path.dirname(__file__))
-README = open(os.path.join(here, 'README.rst')).read()
+README = open(os.path.join(here, 'README.txt')).read()
 NEWS = open(os.path.join(here, 'NEWS.txt')).read()
 
 version = '1.0'
@@ -23,6 +23,7 @@ classifiers = [
 
 setup(
   name = 'assignmentprint',
+  py_modules = ['assignmentprint'],
   version = version,
   description="Pretty printer for student-submitted assignments.",
   long_description=README + '\n\n' + NEWS,
@@ -32,4 +33,5 @@ setup(
   author_email='saffsd@gmail.com',
   url='https://github.com/saffsd/assignmentprint',
   license='GPLv3',
+  install_requires=install_requires,
   )
