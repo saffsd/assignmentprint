@@ -23,7 +23,6 @@ classifiers = [
 
 setup(
   name = 'assignmentprint',
-  packages = ['assignmentprint'],
   version = version,
   description="Pretty printer for student-submitted assignments.",
   long_description=README + '\n\n' + NEWS,
